@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /*Selector universal*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body{
+            background-color: aqua;
+        }
+
+        /*por elemento*/
+        p{
+            color:red;
+            text-align: center;
+        }
+
+        /*Por id*/
+        #titulo{
+            color:blue;
+            text-align: right;
+        }
+
+        /*Por clase*/
+        .izquierda{
+            color:green;
+            text-align: left;
+        }
+
+        .contraste{
+            color:black;
+        }
+
+        p.izquierda{
+            text-decoration: underline;
+        }
+
+        /*Agrupacion*/
+        h1, h2, p{
+            font-weight: bold;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Header simple</h1>
+    <h2 id="titulo">header con Id titulo</h2>
+    <p>Parrafo</p>
+
+    <h3 class="izquierda">Prueba clase header</h3>
+    <p class="izquierda">Prueba clase parrafo</p>
+    <p class="izquierda contraste">Prueba clase contraste izquierda</p>
+    
+</body>
+</html>

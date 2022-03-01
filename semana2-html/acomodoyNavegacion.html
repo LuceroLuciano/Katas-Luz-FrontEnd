@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-image: url(./img/japon.jpg);
+            padding: 30px;
+            text-align: cente;
+            font-size: 35px;
+            color: white;
+            height: 150px;
+        }
+
+        /* Crear 2 oclumnas con la isma posicion en la fila */
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* Solo para demostración, deberia ser removido */
+            /* background: #ccc;
+            padding: 20px; */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #d4b4f1;
+            height: 300px;
+        }
+
+        /* Limpiar los flats despues the las columnas */
+        section::after {
+            content: "";
+            display: table;
+            clear:both;
+        }
+
+
+        /* Estilo footer */
+        footer {
+            /* background-color:rgb(240, 156, 219); */          
+            background-image: url(./img/japon.jpg);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Respinside layout */
+        @media (max-width: 600px) {
+            nav,
+            article{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Ciudades</h2>
+    </header>
+
+    <section>
+        <nav>
+            <li>
+                <ul>
+                    <li><a href="#">Londres</a></li>
+                    <li><a href="#">Tokio</a></li>
+                    <li><a href="#">Toronto</a></li>
+                    <li><a href="./introHTML.html" style="color: green;">Ir a la pagina de Bienvenida</a></li>
+                </ul>
+            </li>
+        </nav>
+
+        <article>
+            <h1>Tokio</h1>
+            <p>Tokio es la capital de Japon 🇯🇵 <br> 
+                Con sus 13 millones de habitantes se confirma la metrópoli más populosa del país y <br>
+                una de las mayores ciudades del mundo. Su historia se remonta a 1603 <br>
+                cuando Ieyasu Tokugawa estableció el gobierno feudal (el shogunato) <br>
+                y desde entonces goza de un próspero desarrollo. <br>
+                Tokio se identifica como el centro político, económico y cultural de Japón y, <br>
+                en base a la subdivisión administrativa del territorio, <br>
+                se divide en 23 distritos que incluyen 26 ciudades, 5 ciudadelas y 8 aldeas.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>    
+</body>
+</html>

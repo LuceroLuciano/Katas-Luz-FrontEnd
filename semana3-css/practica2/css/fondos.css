@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    height: 400px;
+}
+
+div {
+    height: 400px;
+}
+
+.fondoColor {
+    background-color: #380f66;
+}
+
+.fondoOpacidad {
+    background-color: #d14646;
+    opacity: 0.6;
+}
+
+.fondoGradiante {
+    background: linear-gradient(blue, purple, pink);
+}
+
+.fondoImagen {
+    background-image: url(../img/fondo1.jpg);
+}
+
+.fondoRepetidoX {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: repeat-x;
+}
+
+.fondoRepetidoY {
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: repeat-y;
+}
+
+.fondoRepetido {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+}
+
+.fondoPosicion {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.fondoCompleto {
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}

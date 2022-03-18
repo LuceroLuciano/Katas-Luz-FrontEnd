@@ -1,0 +1,29 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+.colorRojo {
+    color: tomato;    
+}
+
+/* Red, Green, Blue */
+.colorRGB {
+    color:rgb(93, 113, 218)
+}
+
+/* La letra A agrega transparencia(opacidad) al color */
+.colorRGBA {
+    color: rgba(93, 217, 94, 0.6)
+}
+
+.colorHEX {
+    color: #EE43E3;
+}
+
+.colorHSL {
+    color: hsl(30, 68%, 31%);
+}

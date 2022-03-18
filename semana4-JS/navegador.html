@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS en el Navegador</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Asi se usa JS en en navegador</h1>
+    <p>Este es un parrafo</p>
+    <a href="#" class="links">Este es otro parrafo</a>
+    
+    <p id="demo"></p>
+
+    <p id="click" onclick="cambiarTexto(this)">Da click aquí</p>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">
+        <p>Mouse over me</p>
+    </div>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">
+        <p>click me</p>
+    </div>
+
+    <button id="boton">Pruebame</button>
+
+</body>
+    <script src="./js/navegador.js"></script>
+</html>

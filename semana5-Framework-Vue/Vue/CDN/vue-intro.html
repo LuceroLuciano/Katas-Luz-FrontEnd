@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro-Vue</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>   
+    <div id="app">
+        <!--Vue bandings-->
+        <img v-bind:src="foto" alt="foto" :class="genero"> <!-- Poner los dos puntos :class es lo mismo que v-bind:  -->
+
+        <h1>{{ nombre }} {{ apellido }}</h1>
+        <h3>Email: {{ email }}</h3>
+        <button v-on:click="cambiarUsuario()" :class="genero">Tener un usuario random</button>
+    </div>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- script de JS -->
+   <script src="./app.js"></script>
+</body>
+</html>
